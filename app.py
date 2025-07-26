@@ -2,9 +2,16 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+<<<<<<< HEAD
 #inference predictionon new data
 scaler = pickle.load(open("models/scaler.pkl", 'rb'))
 model_gbc = pickle.load (open("models/model_gbc.pkl",'rb'))
+=======
+# #inference predictionon new data
+
+scaler = pickle.load(open("models/scaler.pkl", 'rb'))
+model_gbc = pickle.load(open("models/model_gbc.pkl", 'rb'))
+>>>>>>> d7cd8aa (Initial commit)
 
 def predict_chronic_disease(age,bp,sg,al,hemo,sc,htn,dm,cad,appet,pc):
     df_dict= {
