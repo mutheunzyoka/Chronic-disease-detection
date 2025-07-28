@@ -3,28 +3,11 @@ import pandas as pd
 import pickle
 
 
-import sys
-import os
-import streamlit as st # Assuming you import streamlit
-st.write(f"Python Executable: {sys.executable}")
-st.write(f"Python Path: {sys.path}")
-st.write(f"Current Working Directory: {os.getcwd()}")
-# If you want to get really fancy, try to import sklearn here
-# and print its file path if successful:
-try:
-    import sklearn
-    st.write(f"Scikit-learn found at: {sklearn.__file__}")
-except ImportError:
-    st.write("Scikit-learn not found in this environment.")
+
 # #inference prediction new data
 
 
-try:
-    model_gbc = pickle.load(open("/mount/src/chronic-disease-detection/models/model_gbc.pkl", 'rb'))
-    print("Model loaded successfully!")
-except Exception as e:
-    print(f"Error loading model: {e}")
-    
+model_gbc = pickle.load(open("models/model_gbc.pkl", 'rb'))
 scaler = pickle.load(open("models/scaler.pkl", 'rb')) 
 
 
