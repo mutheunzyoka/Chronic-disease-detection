@@ -4,8 +4,18 @@ import pickle
 
 # #inference prediction new data
 
-scaler = pickle.load(open("./scaler.pkl", "rb")) 
+
 model_gbc = pickle.load(open("./model_gbc.pkl", 'rb'))
+
+
+try:
+    with open("./scaler.pkl", "rb") as f:
+        scaler = pickle.load(f)
+    st.write("Scaler loaded successfully!")
+except FileNotFoundError:
+    st.error("scaler.pkl not found. Check repository.")
+except Exception as e:
+    st.error(f"Error loading scaler.pkl: {str(e)}")
 
 def predict_chronic_disease(age,bp,sg,al,hemo,sc,htn,dm,cad,appet,pc):
     df_dict= {
