@@ -6,6 +6,7 @@ import pickle
 
 
 model_gbc = pickle.load(open("./model_gbc.pkl", 'rb'))
+scaler = pickle.load(open("models/scaler.pkl", 'rb')) 
 
 
 try:
