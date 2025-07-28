@@ -5,8 +5,8 @@ import pickle
 # #inference prediction new data
 
 
-model_gbc = pickle.load(open("./model_gbc.pkl", 'rb'))
-scaler = pickle.load(open("./scaler.pkl", 'rb')) 
+model_gbc = pickle.load(open("models/model_gbc.pkl", 'rb'))
+scaler = pickle.load(open("models/scaler.pkl", 'rb')) 
 
 
 def predict_chronic_disease(age,bp,sg,al,hemo,sc,htn,dm,cad,appet,pc):
