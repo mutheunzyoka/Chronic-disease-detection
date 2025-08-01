@@ -10,9 +10,10 @@ import pickle
 # model_gbc = pickle.load(open("models/model_gbc.pkl", 'rb'))
 # scaler = pickle.load(open("models/scaler.pkl", 'rb')) 
 
-model_gbc = pickle.load(open(r'C:\home\gladys\Desktop\PLP ACADEMY\Final project\model_gbc','rb'))
+model_gbc = pickle.load(open(r'/home/gladys/Desktop/PLP ACADEMY/Final project/model_gbc.pkl', 'rb'))
 
-scaler = pickle.load(open(r'C:\home\gladys\Desktop\PLP ACADEMY\Final project\scaler.pkl', 'rb'))
+
+scaler = pickle.load(open(r'/home/gladys/Desktop/PLP ACADEMY/Final project/scaler.pkl', 'rb'))
 
 
 # model = joblib.load(r'C:\Users\ADMIN\Desktop\Software\AI_Software Engineering\Final Project\gbvtrackai\notebooks\violence_rf_model.pkl')
