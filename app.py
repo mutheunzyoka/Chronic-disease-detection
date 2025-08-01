@@ -7,9 +7,16 @@ import pickle
 # #inference prediction new data
 
 
-model_gbc = pickle.load(open("models/model_gbc.pkl", 'rb'))
-scaler = pickle.load(open("models/scaler.pkl", 'rb')) 
+# model_gbc = pickle.load(open("models/model_gbc.pkl", 'rb'))
+# scaler = pickle.load(open("models/scaler.pkl", 'rb')) 
 
+model_gbc = pickle.load(open(r'/home/gladys/Desktop/PLP ACADEMY/Final project/model_gbc.pkl', 'rb'))
+
+scaler = pickle.load(open(r'/home/gladys/Desktop/PLP ACADEMY/Final project/scaler.pkl', 'rb'))
+
+
+# model = joblib.load(r'C:\Users\ADMIN\Desktop\Software\AI_Software Engineering\Final Project\gbvtrackai\notebooks\violence_rf_model.pkl')
+# scaler = joblib.load(r'C:\Users\ADMIN\Desktop\Software\AI_Software Engineering\Final Project\gbvtrackai\notebooks\scaler.pkl')
 
 def predict_chronic_disease(age,bp,sg,al,hemo,sc,htn,dm,cad,appet,pc):
     df_dict= {
