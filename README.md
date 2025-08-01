@@ -55,3 +55,5 @@ Key features such as age, bp (blood pressure), sg (specific gravity), al (albumi
 3. Input Parameters: The interface allows you to input patient data for the following features: age, bp, sg, al, hemo, sc, htn, dm, cad, appet, and pc.
 
 4. Get Prediction: Click the "Predict" button to get the result, which indicates whether the patient is likely to have Chronic Kidney Disease.
+
+   http://localhost:8501
